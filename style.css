@@ -167,6 +167,48 @@ body {
   white-space: nowrap;
 }
 
+/* ===== Badge Animation Keyframes ===== */
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes floatLeftRight {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(12px);
+  }
+}
+
+@keyframes floatRightLeft {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+}
+
+/* ===== Apply to Specific Badges ===== */
+.badge.build {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+.badge.innovate {
+  animation: floatLeftRight 4s ease-in-out infinite;
+}
+
+.badge.automate {
+  animation: floatRightLeft 3s ease-in-out infinite;
+}
+
+
 /* ===== About Me Section ===== */
 .about-me {
   display: flex;
