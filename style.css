@@ -30,6 +30,7 @@ body {
   padding: 15px 40px;
 }
 
+
 .logo-title {
   display: flex;
   align-items: center;
@@ -473,3 +474,111 @@ body {
 }
 
 
+/* ===== Responsive Styles ===== */
+
+/* Small Devices (Phones) */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 20px;
+  }
+
+  .left-content h1 {
+    font-size: 36px;
+  }
+
+  .profile-container {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .about-me {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .about-left,
+  .about-right {
+    max-width: 100%;
+  }
+
+  .about-left .main-img,
+  .about-left .overlay-img {
+    width: 100%;
+    position: static;
+    margin-top: 20px;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-image img {
+    width: 100%;
+  }
+
+  .bar {
+    width: 100%;
+  }
+
+  .projects h2 {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .scroll-top-btn {
+    right: 1rem;
+    top: 1rem;
+    transform: none;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 992px) {
+  .hero {
+    padding: 40px 5%;
+  }
+
+  .left-content h1 {
+    font-size: 40px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .skills-container {
+    padding: 2rem 1rem;
+  }
+}
